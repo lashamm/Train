@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <main>
+        <form>
+            <div class="text">
+            <h1>რეგისტრაცია</h1>
+        </div>
+        <div class="inps">
+
+      
+            <div class="upper">
+            <div class="firstCol">
+            <label for="username">სახელი:</label>
+            <input class="name" type="text" id="username" name="username" required placeholder="შეიყვანეთ თქვენი სახელი">
+            <label for="email">ელ-ფოსტა:</label>
+            <input class="mail" type="email" id="email" name="email" required placeholder="შეიყვანეთ თქვენი ელ-ფოსტა">
+        </div>
+
+            <div class="secondCol">
+            <label for="phone">მობ. ნომერი:</label>
+            <input class="num" type="number" id="phone" name="phone" placeholder="შეიყვანეთ მობ. ნომერი">
+            <label for="password">პაროლი:</label>
+            <input type="password" id="password" name="password" required placeholder="შეიყვანეთ პაროლი">
+        </div>
+        </div>
+
+        <div class="sep">
+            <h1 >გადახდის მეთოდი</h1>
+        </div>
+  
+        <div class="lower">
+            <div class="lowerUpper">
+
+                <input type="number" name="" id='cardNum' required placeholder="კარტის ნომერი">
+                <input type="text" name="" id='owner' required placeholder="კარტის მფლობელი">
+
+            </div>
+            <div class="lowerLower">
+                <input type="number" name="" id='expData' required placeholder="MM/YY">
+                <input type="number" name="" id='CCV' required placeholder="CCV">
+            </div>
+        </div>
+        </div> 
+        <div class="submit">
+            <button class="btn"><a class="regist" href="/search.html">დარეგისტრირება</a></button>
+        </div>
+        <div class="x">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+            <p class="termsLink">
+                <a href="https://www.linkedin.com/in/lasha-maisuradze-292255327/">Terms and Conditions</a>
+            </p>
+        </div>
+    </form>
+    </main>
+
+    <script src="register.js" type="module"></script>
+</body>
+</html>

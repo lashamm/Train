@@ -1,0 +1,307 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+    color:black
+}
+main{
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image:url(samgzavro-mtavari.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        backdrop-filter: blur(10px);
+        padding: 70px 20px;
+        border-radius: 55px;
+        gap:50px;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+        .inps{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .upper{
+                display: flex;
+                gap:10px;
+                justify-content: center;
+                .firstCol{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    input{
+                        width:200px;
+                        padding:7px;
+                        border: none;
+                        border-bottom: red 2px solid;
+                        border-left: red 2px solid;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+                }
+            }
+            .secondCol{
+                display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                input{
+                    width:200px;
+                    padding:7px;
+                    border: none;
+                    border-bottom: red 2px solid;
+                    border-left: red 2px solid;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+            }
+            }
+
+            }
+            label{
+                font-size: 18px;
+            }
+        }
+        .x{
+            text-align: center;
+            a{
+                color: black;
+                text-decoration: underline !important;
+                text-decoration: none;
+                transition: 0.3s;
+            }
+            a:hover{
+                color:#5E8390;
+            }
+        }
+            .submit{
+                button{
+                width: 100%;
+                padding:10px 50px;
+                background-color: red;
+                border: none;
+                border-radius: 5px;
+                transition: 0.3s;
+                cursor: pointer;
+                a{
+                    color:white;
+                }
+            }
+            button:hover{
+                background-color: rgb(99, 2, 2);
+                color: black;
+                transition: 0.3s;
+                box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                transition: 0.3s;
+                transform: scale(1.1); 
+            }
+        
+         }
+}
+}
+
+
+.sep{
+    h1{
+        text-align: center;
+    }
+}
+
+
+.lower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+    .lowerUpper{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        input{
+                        width:200px;
+                        padding:7px;
+                        border: none;
+                        border-bottom: red 2px solid;
+                        border-left: red 2px solid;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+        }
+    }
+    .lowerLower{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        input{
+                        width:200px;
+                        padding:7px;
+                        border: none;
+                        border-bottom: red 2px solid;
+                        border-left: red 2px solid;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px)  {
+    main{
+        display:flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-image:url(samgzavro-mtavari.jpg);
+        background-position: center;
+        background-size: cover;
+        
+        #register{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            backdrop-filter: blur(10px);
+            padding: 70px 20px;
+            border-radius: 55px;
+            gap:50px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    
+            .inps{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                .upper{
+                    display: flex;
+                    gap:10px;
+                    justify-content: center;
+                    .firstCol{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        input{
+                            width:100px;
+                            padding:7px;
+                            border: none;
+                            border-bottom: red 2px solid;
+                            border-left: red 2px solid;
+                            border-radius: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+                    }
+                }
+                .secondCol{
+                    display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    input{
+                        width:100px;
+                        padding:7px;
+                        border: none;
+                        border-bottom: red 2px solid;
+                        border-left: red 2px solid;
+                        border-radius: 5px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+                }
+                }
+    
+                }
+                label{
+                    font-size: 18px;
+                }
+            }
+            .x{
+                text-align: center;
+                a{
+                    color: black;
+                    text-decoration: underline !important;
+                    text-decoration: none;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    color:#5E8390;
+                }
+            }
+                .submit{
+                    button{
+                    width: 100%;
+                    padding:10px 50px;
+                    background-color: red;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    a{
+                        color:white;
+                    }
+                }
+                button:hover{
+                    background-color: rgb(99, 2, 2);
+                    color: black;
+                    transition: 0.3s;
+                    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    transition: 0.3s;
+                    transform: scale(1.1); 
+                }
+            
+             }
+    }
+    }
+    
+    
+    .sep{
+        h1{
+            text-align: center;
+        }
+    }
+    
+    
+    .lower{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:10px;
+        .lowerUpper{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            input{
+                            width:100px;
+                            padding:7px;
+                            border: none;
+                            border-bottom: red 2px solid;
+                            border-left: red 2px solid;
+                            border-radius: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+            }
+        }
+        .lowerLower{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            input{
+                            width:100px;
+                            padding:7px;
+                            border: none;
+                            border-bottom: red 2px solid;
+                            border-left: red 2px solid;
+                            border-radius: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("samgzavro-mtavari.jpg");
+  background-position: center;
+}
+main a {
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+main a:hover {
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  color: red;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.parentBtns {
+  display: flex;
+  display: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 10vh;
+}
+.parentBtns .btnss {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 950px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.parentBtns .btnss button {
+  height: 50px;
+  width: 150px;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.parentBtns .btnss button:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.parentBtns .trainId p {
+  color: red;
+  font-size: 50px;
+}
+.parentBtns .buyBtn {
+  height: 50px;
+  width: 200px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: red;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.parentBtns .buyBtn:hover {
+  height: 50px;
+  width: 200px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 970px) {
+  .parentBtns {
+    display: flex;
+    display: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .parentBtns .btnss {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    width: 550px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .parentBtns .btnss button {
+    height: 35px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .parentBtns .btnss button:hover {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .parentBtns .trainId p {
+    color: red;
+    font-size: 50px;
+  }
+  .parentBtns .buyBtn {
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .parentBtns .buyBtn:hover {
+    height: 50px;
+    width: 200px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .parentBtns {
+    display: flex;
+    display: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .parentBtns .btnss {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    width: 350px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .parentBtns .btnss button {
+    height: 35px;
+    width: 120px;
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .parentBtns .btnss button:hover {
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .parentBtns .trainId p {
+    color: red;
+    font-size: 40px;
+  }
+  .parentBtns .buyBtn {
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .parentBtns .buyBtn:hover {
+    height: 50px;
+    width: 200px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=tickets.css.map */

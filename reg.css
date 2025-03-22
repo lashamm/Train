@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(samgzavro-mtavari.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 70px 20px;
+  border-radius: 55px;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+main form .inps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main form .inps .upper {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main form .inps .upper .firstCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main form .inps .upper .firstCol input {
+  width: 200px;
+  padding: 7px;
+  border: none;
+  border-bottom: red 2px solid;
+  border-left: red 2px solid;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+main form .inps .upper .secondCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main form .inps .upper .secondCol input {
+  width: 200px;
+  padding: 7px;
+  border: none;
+  border-bottom: red 2px solid;
+  border-left: red 2px solid;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+main form .inps label {
+  font-size: 18px;
+}
+main form .x {
+  text-align: center;
+}
+main form .x a {
+  color: black;
+  text-decoration: underline !important;
+  text-decoration: none;
+  transition: 0.3s;
+}
+main form .x a:hover {
+  color: #5E8390;
+}
+main form .submit button {
+  width: 100%;
+  padding: 10px 50px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main form .submit button a {
+  color: white;
+}
+main form .submit button:hover {
+  background-color: rgb(99, 2, 2);
+  color: black;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.sep h1 {
+  text-align: center;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+.lower .lowerUpper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lower .lowerUpper input {
+  width: 200px;
+  padding: 7px;
+  border: none;
+  border-bottom: red 2px solid;
+  border-left: red 2px solid;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.lower .lowerLower {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lower .lowerLower input {
+  width: 200px;
+  padding: 7px;
+  border: none;
+  border-bottom: red 2px solid;
+  border-left: red 2px solid;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(samgzavro-mtavari.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  main #register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    padding: 70px 20px;
+    border-radius: 55px;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+  main #register .inps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  main #register .inps .upper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  main #register .inps .upper .firstCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #register .inps .upper .firstCol input {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    border-bottom: red 2px solid;
+    border-left: red 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  main #register .inps .upper .secondCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #register .inps .upper .secondCol input {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    border-bottom: red 2px solid;
+    border-left: red 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  main #register .inps label {
+    font-size: 18px;
+  }
+  main #register .x {
+    text-align: center;
+  }
+  main #register .x a {
+    color: black;
+    text-decoration: underline !important;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  main #register .x a:hover {
+    color: #5E8390;
+  }
+  main #register .submit button {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  main #register .submit button a {
+    color: white;
+  }
+  main #register .submit button:hover {
+    background-color: rgb(99, 2, 2);
+    color: black;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .sep h1 {
+    text-align: center;
+  }
+  .lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .lower .lowerUpper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .lower .lowerUpper input {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    border-bottom: red 2px solid;
+    border-left: red 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .lower .lowerLower {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .lower .lowerLower input {
+    width: 100px;
+    padding: 7px;
+    border: none;
+    border-bottom: red 2px solid;
+    border-left: red 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+}/*# sourceMappingURL=reg.css.map */
