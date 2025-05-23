@@ -80,7 +80,7 @@ function render(data) {
                     
                     document.querySelectorAll('.btn').forEach(seatBtn => {
                         if (seatBtn.style.backgroundColor === 'blue') {
-                            seatBtn.style.backgroundColor = 'brown'
+                            seatBtn.style.backgroundColor = 'grey'
                         } else if (seatBtn.style.backgroundColor === 'red') {
                             seatBtn.style.backgroundColor = 'red'
                         }
@@ -93,12 +93,17 @@ function render(data) {
                         text: "მშვიდობიან მგზავრობას გისურვებთ",
                         icon: "success"
                     });
+                    console.log(postObj)
+                    tktSrtg.push(postObj)
+                    localStorage.setItem('tktSrtg', JSON.stringify(tktSrtg))
                 }
             });
         })
         buyBtnParent.appendChild(buyBtn)
     })
 }
+
+let tktSrtg = []
 
 let postObj = {
     trainId: 0,
