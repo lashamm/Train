@@ -170,4 +170,22 @@ main {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: 0.3s;
   transform: scale(1.1);
+}
+
+.Tkt {
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.Tkt:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: red;
 }/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
              let ticketIdSummon = JSON.parse(localStorage.getItem('tktSrtg'));
              let ticketId = ticketIdSummon[0].people[0].seatId
              console.log(ticketId)
-            fetch(`https://railway.stepprojects.ge/api/tickets/cancel/${ticketId}`, {
+            fetch(`https://railway.stepprojects.ge/api/tickets/cancelAll`, {
                     method: "DELETE",
                 })
                 .then(x => console.log(x)

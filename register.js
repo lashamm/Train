@@ -4,17 +4,51 @@ let regist = document.querySelector('.regist')
 let nameInput = document.querySelector('.name')
 let mailInput = document.querySelector('.mail')
 let numInput = document.querySelector('.num')
+let pass = document.querySelector('#password')
+let cardNum = document.querySelector('#cardNum')
+let owner = document.querySelector('#owner')
+let expData = document.querySelector('#expData')
+let ccv = document.querySelector('#CCV')
 
 let userObj = []
 
-regist.addEventListener('click', function(){
-   
-    let user = {
+btn.addEventListener('click', function() {
+    // Validate inputs
+    if(!nameInput.value || !mailInput.value || !numInput.value || 
+       !pass.value || !cardNum.value || !owner.value || !expData.value || !ccv.value) {
+        alert('გთხოვთ შეავსოთ ყველა მონაცემი');
+        return;
+    }
+    
+    // Save to localStorage
+    let userObj = JSON.parse(localStorage.getItem('userObj')) || [];
+    userObj.push({
         name: nameInput.value,
         mail: mailInput.value,
-        num: numInput.value
+        num: numInput.value,
+        pass: pass.value,
+        cardNum: cardNum.value,
+        owner: owner.value,
+        expData: expData.value,
+        ccv: ccv.value
+    });
+    
+    localStorage.setItem('userObj', JSON.stringify(userObj));
+    
+    // Debugging
+    console.log("Attempting redirect to search.html");
+    
+    // Try multiple redirect methods
+    try {
+        window.location.assign('./search.html');
+        setTimeout(() => {
+            if(window.location.href.indexOf('search.html') === -1) {
+                console.warn("Standard redirect failed, trying replace");
+                window.location.replace('./search.html');
+            }
+        }, 100);
+    } catch(e) {
+        console.error("Redirect failed completely:", e);
+        alert("Please run this through a local server (see instructions)");
     }
-    userObj.push(user)
-    console.log(userObj)
-    localStorage.setItem('userObj', JSON.stringify(userObj))
-})
+});

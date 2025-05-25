@@ -14,7 +14,7 @@ main {
   background-position: center;
   background-size: cover;
 }
-main form {
+main .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,22 +27,22 @@ main form {
   gap: 50px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-main form .inps {
+main .form .inps {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-main form .inps .upper {
+main .form .inps .upper {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-main form .inps .upper .firstCol {
+main .form .inps .upper .firstCol {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main form .inps .upper .firstCol input {
+main .form .inps .upper .firstCol input {
   width: 200px;
   padding: 7px;
   border: none;
@@ -51,12 +51,12 @@ main form .inps .upper .firstCol input {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-main form .inps .upper .secondCol {
+main .form .inps .upper .secondCol {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main form .inps .upper .secondCol input {
+main .form .inps .upper .secondCol input {
   width: 200px;
   padding: 7px;
   border: none;
@@ -65,22 +65,22 @@ main form .inps .upper .secondCol input {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-main form .inps label {
+main .form .inps label {
   font-size: 18px;
 }
-main form .x {
+main .form .x {
   text-align: center;
 }
-main form .x a {
+main .form .x a {
   color: black;
   text-decoration: underline !important;
   text-decoration: none;
   transition: 0.3s;
 }
-main form .x a:hover {
+main .form .x a:hover {
   color: #5E8390;
 }
-main form .submit button {
+main .form .submit button {
   width: 100%;
   padding: 10px 50px;
   background-color: red;
@@ -88,17 +88,16 @@ main form .submit button {
   border-radius: 5px;
   transition: 0.3s;
   cursor: pointer;
-}
-main form .submit button a {
   color: white;
 }
-main form .submit button:hover {
+main .form .submit button:hover {
   background-color: rgb(99, 2, 2);
   color: black;
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition: 0.3s;
   transform: scale(1.1);
+  color: white;
 }
 
 .sep h1 {

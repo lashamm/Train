@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <form>
+        <div class='form'>
             <div class="text">
             <h1>რეგისტრაცია</h1>
         </div>
@@ -49,16 +49,9 @@
         </div>
         </div> 
         <div class="submit">
-            <button class="btn"><a class="regist" href="/search.html">დარეგისტრირება</a></button>
+            <button onclick="window.location.href='search.html'" class="btn">დარეგისტრირება</button>
         </div>
-        <div class="x">
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">I agree to the terms and conditions</label>
-            <p class="termsLink">
-                <a href="https://www.linkedin.com/in/lasha-maisuradze-292255327/">Terms and Conditions</a>
-            </p>
-        </div>
-    </form>
+    </div>
     </main>
 
     <script src="register.js" type="module"></script>

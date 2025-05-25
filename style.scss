@@ -164,3 +164,22 @@ main{
         transition: 0.3s;
         transform: scale(1.1);
 }
+
+.Tkt{
+   background-color: red;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover{
+        transform:scale(1.1);
+        background-color: white;
+        color:red;
+    }
+    
+}
