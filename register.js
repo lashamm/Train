@@ -13,14 +13,11 @@ let ccv = document.querySelector('#CCV')
 let userObj = []
 
 btn.addEventListener('click', function() {
-    // Validate inputs
     if(!nameInput.value || !mailInput.value || !numInput.value || 
        !pass.value || !cardNum.value || !owner.value || !expData.value || !ccv.value) {
         alert('გთხოვთ შეავსოთ ყველა მონაცემი');
-        return;
     }
-    
-    // Save to localStorage
+else{
     let userObj = JSON.parse(localStorage.getItem('userObj')) || [];
     userObj.push({
         name: nameInput.value,
@@ -35,10 +32,8 @@ btn.addEventListener('click', function() {
     
     localStorage.setItem('userObj', JSON.stringify(userObj));
     
-    // Debugging
     console.log("Attempting redirect to search.html");
-    
-    // Try multiple redirect methods
+
     try {
         window.location.assign('./search.html');
         setTimeout(() => {
@@ -51,4 +46,4 @@ btn.addEventListener('click', function() {
         console.error("Redirect failed completely:", e);
         alert("Please run this through a local server (see instructions)");
     }
-});
+}});

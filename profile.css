@@ -74,4 +74,41 @@
 }
 .main .userInfo:hover p {
   font-size: 30px;
+}
+
+@media screen and (max-width: 850px) {
+  .userInfo {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 40px;
+    width: 350px !important;
+    height: 300px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .userInfo p {
+    font-size: 20px !important;
+  }
+  .userInfo:hover {
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 40px;
+    width: 400px !important;
+    height: 300px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1) !important;
+  }
+  .userInfo:hover p {
+    font-size: 20px !important;
+  }
 }/*# sourceMappingURL=profile.css.map */

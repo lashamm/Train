@@ -188,4 +188,80 @@ main {
   transform: scale(1.1);
   background-color: white;
   color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .choose {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .choose .chooses {
+    display: flex;
+    gap: 10px;
+    flex-direction: column !important;
+  }
+  .choose .button .search {
+    width: 150px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+  }
+  .choose .button .search:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1.1);
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+  }
+  .profile {
+    width: 150px !important;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile:hover {
+    background-color: white;
+    width: 150px !important;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 75px;
+    align-items: center;
+    color: red;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  .Tkt {
+    background-color: red;
+    width: 150px !important;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .Tkt:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
