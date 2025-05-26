@@ -38,7 +38,7 @@ console.log(el)
 
 
 search.addEventListener('click', function () {
-  const from = selChild.value
+  let from = selChild.value
   let to = selChild2.value
   let date = dateINP.value
 
