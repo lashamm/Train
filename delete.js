@@ -16,4 +16,5 @@
                 .then(x => console.log(x)
                 )
             console.log(ticketId + ' წაიშალა')
+            localStorage.removeItem('tktSrtg')
         })

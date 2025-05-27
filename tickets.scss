@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 main{
-    height:100vh;
+    height:auto;
     width:100%;
-    background-image: url('samgzavro-mtavari.jpg');
-    background-position: center;
+    background-image: none !important;
     a{
       background-color: red;
       width: 200px;
@@ -198,7 +197,7 @@ main{
     width: 350px;
     padding:20px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
     gap:10px;
     border-radius: 20px;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -256,17 +255,10 @@ main{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and(max-width:400px) {
+    .btnss{
+      width: 310px !important;
+      display: grid !important;
+      grid-template-columns: auto !important;
+    }
+}
