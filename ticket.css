@@ -58,7 +58,7 @@ a:hover {
   transform: translateY(-2px);
 }
 .btn:disabled {
-  background-color: #brown;
+  background-color: #964B00;
   cursor: not-allowed;
 }
 .btn[style*=blue] {
