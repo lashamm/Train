@@ -1,12 +1,22 @@
-    let ticketIdSummon = JSON.parse(localStorage.getItem('tktSrtg'));
-    let deleteBtn = document.querySelector('.btn')
+let ticketData = JSON.parse(localStorage.getItem('tktSrtg') || 'null');
 
-    console.log(ticketIdSummon[0].people[0].seatId)
-    let ticketId = ticketIdSummon[0].people[0].seatId
+let deleteBtn = document.querySelector(".btn")
+let textElement = document.querySelector('.text');
 
-    console.log(ticketIdSummon)
+
+let ticketId = ticketData?.[0]?.people?.[0]?.seatId;
+
+
+if (!ticketId) {
+    textElement.innerHTML = `<h1>თქვენ არ გაქვთ ნაყიდი ბილეთები</h1>`;
+} else {
+    textElement.innerHTML = `
+        <h1>თქვენი ბილეთის Id არის ${ticketId} გასაუქმებლად დააჭირეთ ღილაკ "წაშლა"-ს</h1>
+    `;
+}
 
         deleteBtn.addEventListener('click', function(){
+             let text = document.querySelector('.text')
              let ticketIdSummon = JSON.parse(localStorage.getItem('tktSrtg'));
              let ticketId = ticketIdSummon[0].people[0].seatId
              console.log(ticketId)
@@ -17,4 +27,7 @@
                 )
             console.log(ticketId + ' წაიშალა')
             localStorage.removeItem('tktSrtg')
+            text.innerHTML = `
+            <h1>თქვენ გააუქმეთ ბილეთები</h1>
+            `
         })
